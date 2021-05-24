@@ -1,0 +1,85 @@
+body{
+    background-color: beige;
+}
+
+table{
+ border-collapse: collapse;
+ table-layout: fixed; 
+ width: 100%;
+} 
+
+
+
+h1{
+    text-align: center;
+}
+caption {
+    caption-side: bottom;
+    margin-top: 10px;
+}
+thead th{
+    position:sticky;
+    top: 0;
+}
+
+tfoot th{
+    position: sticky;
+    bottom: 0;
+}
+
+thead th{
+    background-color: black;
+    color: white;
+}
+tfoot th{
+    background-color: black;
+    color: white;
+
+}
+tbody th {
+    background-color:gray;
+    color: white;
+    text-align: right;
+
+}
+ tbody td{
+    text-align:center;
+    border: 1px solid black;
+}
+/* this is the same like on line 54 and 58*/
+/* tbody tr:nth-child(7n-1),
+    tbody tr:nth-child(7n){
+        background-color: lawngreen;
+} */
+/* tr.Saturday,tr.Sunday{
+    background-color: lawngreen;
+} */
+
+tr[class^=S]{
+    background-color: lawngreen;
+
+}
+.cells{
+    background-color: white;
+    border: none;
+}
+.dates {
+   width: 6em;
+}
+col {
+    width: 6em;
+}
+tbody th {
+    position: sticky;
+    left: 0;
+}
+tbody tr td:empty{
+
+    border: none;
+    background-color: white;
+   }
+   img{
+       width: 100%;
+       vertical-align: bottom;
+       
+   } 
